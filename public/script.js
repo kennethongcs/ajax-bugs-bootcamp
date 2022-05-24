@@ -20,6 +20,9 @@ const createABug = () => {
   </div>
   `;
   container.appendChild(div);
+  // add an event listener on the button
+  // upon click, add the values of the 3 input fields into an object
+  // use axios to post the object into db
   document.querySelector('.submitBug').addEventListener('click', () => {
     const dataSubmit = {};
     dataSubmit.problem = document.querySelector('#problem').value;
